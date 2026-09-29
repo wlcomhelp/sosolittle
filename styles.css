@@ -1,0 +1,84 @@
+/* =========================================================
+   STYLES.CSS - Coming soon page
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. BASE / RESET
+   --------------------------------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #ffffff;      /* all white background */
+    font-family: "Questrial", Arial, sans-serif;
+    color: #333333;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+
+/* ---------------------------------------------------------
+   2. PAGE LAYOUT
+   Centres everything horizontally and vertically
+   --------------------------------------------------------- */
+.holding-page {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+/* ---------------------------------------------------------
+   3. LOGO
+   --------------------------------------------------------- */
+.logo {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+}
+
+
+/* ---------------------------------------------------------
+   4. TEXT
+   --------------------------------------------------------- */
+.coming-soon {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.events a {
+    color: #333333;
+    font-weight: bold;
+}
+
+.events a:hover,
+.events a:focus {
+    text-decoration: none;
+}
+
+
+/* ---------------------------------------------------------
+   5. MOBILE (screens 600px and below)
+   --------------------------------------------------------- */
+@media (max-width: 600px) {
+    .logo {
+        max-width: 200px;
+    }
+
+    .coming-soon {
+        font-size: 1.3rem;
+    }
+}
